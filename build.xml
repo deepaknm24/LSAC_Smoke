@@ -1,0 +1,56 @@
+<project name="Listeners_Demo" basedir=".">		
+	<path id="cp">
+    		<pathelement path="bin" />
+		    <pathelement location="./src"/>
+        	<fileset dir="jars"/>
+	</path>
+	<target name="Clean">
+		<delete dir="bin"></delete>
+    </target>
+	
+	<target name="Create" depends="Clean">
+	   <mkdir dir="bin"/>
+	</target>
+	
+	<target name="Compile" depends="Create">
+	   <javac classpathref="cp" srcdir="src" destdir= "bin" />
+     </target>
+	
+	<target name="run" depends="Compile">
+	    <java classpathref="cp" classname="org.testng.TestNG" args="testng.xml"/>    		    	
+	</target>
+	
+	<target name="report" depends="run">	       
+	   		<xslt in="./test-output/testng-results.xml" style="./testng-results.xsl" out="./testng-xslt/index.html">
+	    		 	<param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir" />
+	    		 	<classpath refid="cp"/>
+	    		</xslt>
+	</target>
+	
+	<target name="zipresults" depends="report">
+			<tstamp>
+				<format property="timestamp" pattern="dd-MM-yyyy-HH-mm-ss"/>
+			</tstamp>
+			<zip basedir="${basedir}/testng-xslt" destfile="${basedir}/Result archive/Resultsof-${timestamp}.zip"/>
+	</target>
+	
+	<target name="sendMail" depends="zipresults">
+
+	<mail tolist="testing.purpose.dummy@gmail.com"
+	from="deepak.nmp@gmail.com"
+	subject="Test Report"
+	mailhost="smtp.gmail.com"
+	mailport="465"
+	ssl="true"
+	user="testing.purpose.dummy@gmail.com"
+	password="testyantra">
+	<attachments>
+		
+	<fileset dir="${basedir}/Result archive/">
+	<include name="**/Resultsof-${timestamp}.zip"/>
+	</fileset>
+	</attachments>
+	</mail>
+	</target> 
+	
+</project>
