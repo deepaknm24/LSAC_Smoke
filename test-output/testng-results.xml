@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="38380" started-at="2020-02-17T09:27:03Z" finished-at="2020-02-17T09:27:42Z">
+  <suite name="Suite" duration-ms="53166" started-at="2020-02-17T10:39:00Z" finished-at="2020-02-17T10:39:53Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="38380" started-at="2020-02-17T09:27:03Z" finished-at="2020-02-17T09:27:42Z">
-      <class name="com.Lsac.OfficialLSATPrepEndtoEnd">
-        <test-method status="PASS" signature="precondition(java.lang.String)[pri:0, instance:com.Lsac.OfficialLSATPrepEndtoEnd@17c68925]" name="precondition" is-config="true" duration-ms="9686" started-at="2020-02-17T14:57:03Z" finished-at="2020-02-17T14:57:13Z">
+    <test name="Test" duration-ms="53166" started-at="2020-02-17T10:39:00Z" finished-at="2020-02-17T10:39:53Z">
+      <class name="com.Lsac.Scripts.OfficialLSATPrepEndtoEnd">
+        <test-method status="PASS" signature="precondition(java.lang.String)[pri:0, instance:com.Lsac.Scripts.OfficialLSATPrepEndtoEnd@17c68925]" name="precondition" is-config="true" duration-ms="19165" started-at="2020-02-17T16:09:00Z" finished-at="2020-02-17T16:09:19Z">
           <params>
             <param index="0">
               <value>
@@ -18,17 +18,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="OfficialLSATPrepEndtoEndTest()[pri:0, instance:com.Lsac.OfficialLSATPrepEndtoEnd@17c68925]" name="OfficialLSATPrepEndtoEndTest" duration-ms="10042" started-at="2020-02-17T14:57:13Z" finished-at="2020-02-17T14:57:23Z">
+        <test-method status="PASS" signature="OfficialLSATPrepEndtoEndTest()[pri:0, instance:com.Lsac.Scripts.OfficialLSATPrepEndtoEnd@17c68925]" name="OfficialLSATPrepEndtoEndTest" duration-ms="8717" started-at="2020-02-17T16:09:19Z" finished-at="2020-02-17T16:09:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OfficialLSATPrepEndtoEndTest -->
-        <test-method status="PASS" signature="postcondition()[pri:0, instance:com.Lsac.OfficialLSATPrepEndtoEnd@17c68925]" name="postcondition" is-config="true" duration-ms="1425" started-at="2020-02-17T14:57:23Z" finished-at="2020-02-17T14:57:24Z">
+        <test-method status="PASS" signature="postcondition()[pri:0, instance:com.Lsac.Scripts.OfficialLSATPrepEndtoEnd@17c68925]" name="postcondition" is-config="true" duration-ms="2164" started-at="2020-02-17T16:09:28Z" finished-at="2020-02-17T16:09:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postcondition -->
-      </class> <!-- com.Lsac.OfficialLSATPrepEndtoEnd -->
-      <class name="com.Lsac.HomePageUIValidation">
-        <test-method status="PASS" signature="precondition(java.lang.String)[pri:0, instance:com.Lsac.HomePageUIValidation@7f690630]" name="precondition" is-config="true" duration-ms="15593" started-at="2020-02-17T14:57:24Z" finished-at="2020-02-17T14:57:40Z">
+      </class> <!-- com.Lsac.Scripts.OfficialLSATPrepEndtoEnd -->
+      <class name="com.Lsac.Scripts.HomePageUIValidation">
+        <test-method status="PASS" signature="precondition(java.lang.String)[pri:0, instance:com.Lsac.Scripts.HomePageUIValidation@7f690630]" name="precondition" is-config="true" duration-ms="14655" started-at="2020-02-17T16:09:30Z" finished-at="2020-02-17T16:09:45Z">
           <params>
             <param index="0">
               <value>
@@ -39,15 +39,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="UIValidationofHomePageTest()[pri:0, instance:com.Lsac.HomePageUIValidation@7f690630]" name="UIValidationofHomePageTest" duration-ms="95" started-at="2020-02-17T14:57:40Z" finished-at="2020-02-17T14:57:40Z">
+        <test-method status="PASS" signature="UIValidationofHomePageTest()[pri:0, instance:com.Lsac.Scripts.HomePageUIValidation@7f690630]" name="UIValidationofHomePageTest" duration-ms="98" started-at="2020-02-17T16:09:45Z" finished-at="2020-02-17T16:09:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UIValidationofHomePageTest -->
-        <test-method status="PASS" signature="postcondition()[pri:0, instance:com.Lsac.HomePageUIValidation@7f690630]" name="postcondition" is-config="true" duration-ms="1505" started-at="2020-02-17T14:57:40Z" finished-at="2020-02-17T14:57:42Z">
+        <test-method status="PASS" signature="postcondition()[pri:0, instance:com.Lsac.Scripts.HomePageUIValidation@7f690630]" name="postcondition" is-config="true" duration-ms="8334" started-at="2020-02-17T16:09:45Z" finished-at="2020-02-17T16:09:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postcondition -->
-      </class> <!-- com.Lsac.HomePageUIValidation -->
+      </class> <!-- com.Lsac.Scripts.HomePageUIValidation -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -101,12 +101,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.Lsac.OfficialLSATPrepEndtoEnd" hash-for-method="OfficialLSATPrepEndtoEndTest">OfficialLSATPrepEndtoEndTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.Lsac.Scripts.OfficialLSATPrepEndtoEnd" hash-for-method="OfficialLSATPrepEndtoEndTest">OfficialLSATPrepEndtoEndTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.Lsac.HomePageUIValidation" hash-for-method="UIValidationofHomePageTest">UIValidationofHomePageTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.Lsac.Scripts.HomePageUIValidation" hash-for-method="UIValidationofHomePageTest">UIValidationofHomePageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -124,7 +124,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.Lsac.OfficialLSATPrepEndtoEnd</span>
+              <span class="class-name">com.Lsac.Scripts.OfficialLSATPrepEndtoEnd</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -139,7 +139,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.Lsac.HomePageUIValidation</span>
+              <span class="class-name">com.Lsac.Scripts.HomePageUIValidation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -160,15 +160,15 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; parallel=&quot;none&quot;&gt;
+&lt;suite name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;parameter name=&quot;environment&quot; value=&quot;webbrowser&quot;/&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.Lsac.CustomTestNGListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.Lsac.Scripts.CustomTestNGListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.Lsac.OfficialLSATPrepEndtoEnd&quot;/&gt;
-      &lt;class name=&quot;com.Lsac.HomePageUIValidation&quot;/&gt;
+      &lt;class name=&quot;com.Lsac.Scripts.OfficialLSATPrepEndtoEnd&quot;/&gt;
+      &lt;class name=&quot;com.Lsac.Scripts.HomePageUIValidation&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -211,17 +211,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'OfficialLSATPrepEndtoEndTest')
-data.setCell(0, 2, 'com.Lsac.OfficialLSATPrepEndtoEnd')
-data.setCell(0, 3, 10042);
+data.setCell(0, 2, 'com.Lsac.Scripts.OfficialLSATPrepEndtoEnd')
+data.setCell(0, 3, 8717);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'UIValidationofHomePageTest')
-data.setCell(1, 2, 'com.Lsac.HomePageUIValidation')
-data.setCell(1, 3, 95);
+data.setCell(1, 2, 'com.Lsac.Scripts.HomePageUIValidation')
+data.setCell(1, 3, 98);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -247,33 +247,33 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Lsac.OfficialLSATPrepEndtoEnd</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Lsac.Scripts.OfficialLSATPrepEndtoEnd</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">precondition(webbrowser)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">OfficialLSATPrepEndtoEndTest</span>
-                <span class="method-start">9687 ms</span>
+                <span class="method-start">19166 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postcondition</span>
-                <span class="method-start">19731 ms</span>
+                <span class="method-start">27885 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Lsac.HomePageUIValidation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Lsac.Scripts.HomePageUIValidation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">precondition(webbrowser)</span>
-                <span class="method-start">21158 ms</span>
+                <span class="method-start">30049 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">UIValidationofHomePageTest</span>
-                <span class="method-start">36751 ms</span>
+                <span class="method-start">44704 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postcondition</span>
-                <span class="method-start">36848 ms</span>
+                <span class="method-start">44803 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
